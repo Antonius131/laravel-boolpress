@@ -13,7 +13,25 @@
 </template>
 
 <script>
+   import Axios from 'axios';
 
+   export default {
+      data: function(){
+         return {
+            tags: [],
+         }
+      },
+      methods: {
+         getTags(){
+            Axios.get('/api/tags').then((response) => {
+               this.tags = response.data.results;
+            });
+         }
+      },
+      created() {
+         this.getTags();
+      }
+   }
 </script>
 
 <style>
