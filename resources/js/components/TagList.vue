@@ -4,7 +4,11 @@
          <div class="row py-5">
             <div class="col-12">
                <ul class="list-group">
-                  <li class="list-group-item">Tag</li>
+                  <li class="list-group-item"
+                     v-for="tag in tags"
+                     :key="tag.id">
+                        {{ tag.tag_name }}
+                  </li>
                </ul>
             </div>
          </div>
