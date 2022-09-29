@@ -11,7 +11,9 @@
                   <a class="nav-link" href="#">Posts</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Tags</a>
+                  <router-link class="nav-link" to="/tags">
+                     Tags
+                  </router-link>
                </li>
             </ul>
          </div>
