@@ -15,7 +15,7 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tags = Tag::with('posts')->get();
+        $tags = Tag::all();
 
         return response()->json([
             'response' => true,
