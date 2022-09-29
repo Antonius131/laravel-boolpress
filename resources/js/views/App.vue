@@ -1,7 +1,8 @@
 <template>
    <section>
       <MainHeader />
-      <MainContent />
+      <!-- <MainContent /> -->
+      <router-view></router-view>
    </section>
 </template>
 
@@ -12,7 +13,7 @@
    export default {
       components: {
          MainContent,
-         MainHeader
+         MainHeader,
       }
    }
 </script>
