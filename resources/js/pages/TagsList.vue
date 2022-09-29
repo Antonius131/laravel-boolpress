@@ -9,7 +9,7 @@
                      :key="tag.id">
                         {{ tag.tag_name }}
                   </li>
-               </ul>
+               </ul>a
             </div>
          </div>
       </div>
